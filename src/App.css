@@ -1,0 +1,515 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style-type: none;
+    font-family: poppins, sans-serif;
+}
+#head{
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    z-index: 30;
+    top: 0;
+}
+#navcon{
+    width: 90%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#logo-name{
+    width: 38%;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+
+}
+#logo-link{
+    width: 10%;
+    background-color: plum;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#devstream{
+    width: 48%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    font-weight: bold;
+    font-size: 25px;
+}
+#ul-listing{
+    width: 28%;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#devstream{
+    color: plum;
+}
+.link{
+    width: 31.33%;
+    background-color: white;
+    margin: 1%;
+    padding: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+  
+   
+}
+#addstory{
+    background-color: black;
+    color: white;
+    width: 38%;
+}
+#addstory:hover{
+    color: blue;
+}
+#sec1{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#art1{
+    width: 90%;
+    background-color: whitesmoke;
+    margin: auto;
+    display: flex;
+}
+.div1{
+    width: 48%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 3%;
+    
+}
+.div11{
+    width: 48%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 3%;
+    display: flex;
+    
+}
+#image1{
+    width: 12%;
+    
+    margin:  5px;
+   
+}
+#future{
+    color: black;
+}
+#art{
+    color: grey;
+}
+#image2{
+    width: 100%;
+}
+#content{
+    font-size: 20px;
+    font-weight: bold;
+}
+#divsub{
+    width: 43%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#live{
+    font-size: 20px;
+    font-weight: 900;
+    font-family: poppins sans-serif;
+}
+#modern{
+    color: grey;
+}
+#word{
+    font-size: 80px;
+    font-weight: bold;
+}
+#matters{
+    color: plum;
+}
+#divsub1{
+    width: 98%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+}
+#divsub2{
+    width: 48%;
+    background-color: plum;
+    margin: 1%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+#divsub22{
+    width: 48%;
+    background-color: white;
+    margin: 1%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+.div1sub{
+    width: 48%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 40px;
+   
+}
+#div1sub{
+    margin-top: 20%;
+
+    
+}
+#div1sub2{
+    margin-bottom:30px ;
+     margin-top: 70px;
+     background-color: plum;
+}
+.divbox1{
+    width: 18%;
+    /* background-color: aquamarine; */
+    padding: 1%;
+    margin: 1%;
+    margin-top: 90%;
+}
+.divbox11{
+    width: 78%;
+    /* background-color: aquamarine; */
+    padding: 1%;
+    margin: 1%;
+}
+#sec2{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#art2{
+    width: 90%;
+    background-color: whitesmoke;
+    margin: auto;
+    display: flex;
+    border-top: 1px solid rgb(204, 200, 200);
+    border-bottom:1px solid rgb(204, 200, 200) ;
+}
+#built{
+    color: grey;
+}
+.div2box{
+    width: 23%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.revenue{
+    font-size: 30px;
+    font-weight: bold;
+}
+.revenue-writing{
+    color: grey;
+}
+#div2{
+    flex-direction: column;
+}
+#sec3{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#art3{
+    width: 90%;
+    background-color: whitesmoke;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#div3-writup{
+    font-size: 30px;
+    font-weight: 900;
+}
+#div3{
+    width: 98%;
+    background-color: whitesmoke;
+    margin: auto;
+    display: flex;
+}
+#div3box1{
+    width: 58%;
+    background-color: bisque;
+    margin: 1%;
+    padding: 3%;
+    border-radius: 25px;
+}
+#div3box1{
+    width: 98%;
+    background-color: rgb(49, 43, 43);
+    margin: 1%;
+    padding: 3%;
+}
+#real{
+    color: white;
+}
+
+#watch{
+    color: grey;
+}
+#image3{
+    width: 100%;
+}
+#div3box11{
+    width: 53%;
+    margin: 1%;
+    padding: 1%;
+}
+#div3box2{
+    width: 38%;
+    background-color: plum;
+    margin: 1%;
+    padding: 3%;
+    border-radius: 25px;
+}
+#div3box22{
+    width: 18%;
+   
+    margin: 1%;
+    padding: 2%;
+}
+#div3box23{
+    width: 98%;
+    margin: 1%;
+    padding: 2%;
+}
+#div3box24{
+    width: 98%;
+    margin: 1%;
+    padding: 2%;
+}
+#secure{
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+#draft{
+    color: black;
+}
+#sec4{
+    width: 100%;
+    background-color: whitesmoke;
+}
+#art4{
+    width: 90%;
+    background-color: plum;
+    margin: auto;
+    border-radius: 30px;
+    padding: 3%;
+}
+#div4{
+    width: 98%;
+    background-color: plum;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div41{
+    width: 98%;
+    padding: 1%;
+    margin: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div4box{
+    width: 98%;
+    background-color: plum;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#div4box1{
+    width: 28%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    border: none;
+    border-radius: 10px;
+}
+button{
+    width: 13%;
+    background-color: pink;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: none;
+}
+#button{
+    font-weight: 900;
+}
+.sec-art1{
+    width: 100%;
+    background-color: whitesmoke;
+}
+.artdetails{
+    width: 70%;
+    background-color: whitesmoke;
+    margin: auto;
+    
+}
+.div-art{
+    width: 38%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+}
+.div-art1{
+    width: 13%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    border-radius: 10px;
+    border: 1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-art2{
+    width: 48%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 1%;
+}
+.div-art11{
+    display: flex;
+}
+.div-art12{
+    width: 8%;
+    background-color: plum;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+.div-art22{
+    width: 28%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 2%;
+}
+.div-art23{
+    width: 48%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 1%;
+}
+.div-art24{
+    width: 98%;
+    background-color: white;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid gray;
+}
+.div-art25{
+    width: 88%;
+    margin: 1%;
+    padding: 5%;
+}
+.div-art26{
+    width: 98%;
+    background-color: whitesmoke;
+    margin: 1%;
+    padding: 5%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#design{
+    font-size: 40px;
+    font-weight: 900;
+}
+#lorem11{
+    font-size: 30px;
+    font-style: italic;
+    color: gray;
+}
+#lorem12{
+    font-size: 20px;
+    color: blue;
+    font-weight: 900;
+}
+#peter{
+    font-weight: 900;
+}
+#verified{
+    color: grey;
+}
+#feed{
+    font-weight: 900;
+    color: gray;
+}
+#arrowimg{
+    width: 70%;
+}
+.manuburger{
+    width: 8%;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#burgerimg{
+    width: 30px;
+    filter: invert();
+    cursor: pointer;
+    
+}

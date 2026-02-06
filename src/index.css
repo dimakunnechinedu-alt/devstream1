@@ -1,0 +1,263 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: poppins sans-serif;
+}
+#latest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;font-weight: bold;
+}
+#story{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: lighter;
+    color: grey;
+}
+.sec-wrapper{
+    width: 100%;
+    background-color: whitesmoke;
+}
+.art-box{
+    width: 90%;
+    background-color: whitesmoke;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.div-box{
+    width: 48%;
+    background-color: whitesmoke;
+    margin: 1px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-box1{
+    width: 68%;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 20px;
+}
+.div-box2{
+    width: 18%;
+    background-color: rgb(61, 48, 48);
+    margin: 1%;
+    padding: 1%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: white;
+}
+#div-box2{
+    background-color: white;
+    color: grey;
+}
+.div-box3{
+    width: 98%;
+    background-color: white;
+    margin: 1px;
+    padding: 1%;
+    flex-direction: column;
+}
+#future:hover{
+    color: plum;
+}
+.div-box33{
+     width: 98%;
+    background-color: white;
+    margin: 1px;
+    padding: 1%;
+    display: flex;
+    justify-content: space-between;
+}
+.div-box34{
+    width: 28%;
+    background-color: white;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+}
+.div-box35{
+    width: 28%;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+   
+}
+.div-box344{
+    width: 18%;
+    background-color: plum;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5px;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-box334{
+     width: 98%;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+     display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-box355{
+    width: 28%;
+    background-color: white;
+    margin: 1%;
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.3;
+
+}
+
+
+.image1{
+    width: 100%;
+    
+}
+.image1:hover{
+    color: red;
+} */
+#january{
+    display: flex;
+}
+#div-box355{
+    width: 60%;
+}
+#div-box355:hover{
+    background-color: lightcoral;
+    padding: 2px;
+    /* filter: invert(); */
+}
+.sec-story{
+    width: 100%;
+    background-color: whitesmoke;
+}
+.art-story{
+    width: 70%;
+    background-color: whitesmoke;
+    margin: auto;
+     display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.div-story{
+    width: 78%;
+    background-color: white;
+    margin: 1%;
+    padding: 1%;
+    border-radius: 5%;
+    border: 1px solid black;
+    
+}
+.div-story1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.div-story2{
+    width: 48%;
+    color: grey;
+    margin: 1px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+#div-story2{
+    color: black;
+    font-weight: 900;
+    font-size: 20px;
+}
+.div-story3{
+    width: 38%;
+    margin: 1%;
+    padding: 1%;
+    color: grey;
+    
+}
+input{
+    width: 98%;
+    padding: 3%;
+    margin: 1%;
+    border-radius: 20px;
+    border: 1px solid grey;
+    
+}
+.div-story4{
+    width: 38%;
+    margin: 1%;
+    padding: 1%;
+    color: grey;
+    
+}
+#narrative{
+    width: 98%;
+    padding: 5%;
+    margin: 1%;
+    border-radius: 10px;
+    resize: vertical;
+    
+}
+.div-storybox{
+    width: 98%;
+    margin: auto;
+    display: flex;
+    
+}
+.div-storybox1{
+    width: 48%;
+    background-color: plum;
+    margin: 1%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    color: black;
+    cursor: pointer;
+
+}
+.div-storybox1:hover{
+    background-color: rgb(240, 208, 240);
+    
+}
+#div-storybox1 {
+    background-color: whitesmoke;
+    color: grey;
+    border: 1px solid black;
+}
+#div-storybox1:hover{
+   background-color: white;
+}
+#publish{
+    color: black;
+}
+#save{
+    color: grey;
+}
