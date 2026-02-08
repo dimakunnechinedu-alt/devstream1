@@ -187,6 +187,20 @@
 
 /* for iphone 14 promax*/
 @media  screen and (max-width: 430px){
+    #beat{
+        font-size: 25px;
+    }
+    #join{
+        font-size: 12px;
+    }
+     #watch{
+    font-size: 8px;
+    font-weight: 500;
+   }
+   #built{
+    font-size: 10px;
+    font-weight: 800;
+   }
    
 }
 
@@ -196,6 +210,12 @@
 }
 /* for Samsug galaxy s20 ultra*/
 @media  screen and (max-width: 412px){
+    #modern{
+        font-size: 12px;
+    }
+     #logo-link{
+        width: 28%;
+    }
 
 }
 @media  screen and (max-width: 393px){
@@ -203,6 +223,14 @@
 }
 /* for iphone 12 pro*/
 @media  screen and (max-width: 390px){
+    #watch{
+        font-size: 6px;
+    }
+    #button{
+        width: 28%;
+        padding: 3%;
+    }
+
 
 }
 /* for iphone X*/
@@ -211,6 +239,21 @@
 }
 /* for samsung galaxy s8+*/
 @media  screen and (max-width: 360px){
+     #modern{
+        font-size: 10px;
+    }
+    #beat{
+        font-size: 18px;
+    }
+    #built{
+        font-size:8px;
+    }
+     #logo-link{
+        width: 28%;
+    }
+    #div3-writup{
+        font-size: 20px;
+    }
     
 
 }
