@@ -1,65 +1,83 @@
-import React from 'react'
-import Article1 from '../component/Article1.jsx'
-import image1 from '../assets/1.png'
-import image2 from '../assets/2.png'
-
+import React, { useEffect, useState } from "react";
+import Article1 from "../component/Article1.jsx";
+import image1 from "../assets/1.png";
+import image2 from "../assets/2.png";
 
 function Articles() {
+
+  // State to store all articles
+  const [articles, setArticles] = useState([]);
+
+  // useEffect runs once when component loads
+  useEffect(() => {
+    // Get stored articles from localStorage
+    // If nothing exists, use empty array
+    const storedArticles =
+      JSON.parse(localStorage.getItem("articles")) || [];
+
+    // Save them into state
+    setArticles(storedArticles);
+  }, []);
+
+  // Optional: Log articles (outside JSX)
+  console.log(articles);
+
+  // Function to delete an article
+  function handleDelete(id) {
+
+    // Update state safely using previous state
+    setArticles((prevArticles) => {
+
+      // Remove article with matching ID
+      const updatedArticles = prevArticles.filter(
+        (article) => article.id !== id
+      );
+
+      // Update localStorage after deleting
+      localStorage.setItem(
+        "articles",
+        JSON.stringify(updatedArticles)
+      );
+
+      // Return updated list to update state
+      return updatedArticles;
+    });
+  }
+
   return (
-  
     <>
-    <h2 id='latest'>Latest Articles</h2>
-    <p id='story'>
-      Curated stories from the DevStream community.
-    </p>
-      <Article1
+      {/* Page Heading */}
+      <h2 id="latest">Latest Articles</h2>
 
-        id='1'
-        date="27-1-2026"
-        title="The Future of Web Design in 2025"
-        paragraph="Artificial Intelligence is no longer a buzzword; it's a foundational tool for creative interfaces. As we move into 2025, the focus shifts toward spatial computing and motion-driven narratives. We expect to see more generative UI that adapts in real..."
-        initial="P"
-        fullname="Peter Jones"
-        img={image1}
-        img1={image2}
-        
-       />
-      <Article1
+      <p id="story">
+        Curated stories from the DevStream community.
+      </p>
 
-        id='2'
-        date="28-1-2026"
-        title="Minimalism as a Lifestyle"
-        paragraph="Choosing less isn't just about aesthetics; it's about clarity. In this article, we explore how reducing noise leads to better cognitive performance and emotional well-being. By stripping away the non-essential, we create space for the things that truly resonate..."
-        initial="J"
-        fullname="Jack Martins"
-         img={image1}
-        img1={image2}
-      />
-      <Article1
-
-        id='3'
-        date="29-1-2026"
-        title="Mastering Tailwind CSS Transitions"
-        paragraph="The secret to high-end UI isn't the color palette, it's the motion. Learn how to use utility classes to create fluid experiences that feel responsive and alive. Transitions are the glue that holds a modern user experience together..."
-        initial="C"
-        fullname="Chris Wood"
-         img={image1}
-        img1={image2}
-      />
-      <Article1
-
-        id='4'
-        date="30-1-2026"
-        title="The Rise of Distributed Systems"
-        paragraph="Scaling a modern application requires more than just more servers. It requires a fundamental shift in how we think about data consistency, network latency, and service discovery in a post-monolith world..."
-        initial="A"
-        fullname="Adam Bean"
-         img={image1}
-        img1={image2}
-      />
+      {/* If no articles exist, show message */}
+      {articles.length === 0 ? (
+        <p
+          style={{
+            textAlign: "center",
+            marginTop: "20px",
+            fontStyle: "italic",
+          }}
+        >
+          No articles found. Be the first to publish a story.
+        </p>
+      ) : (
+        // If articles exist, map through them
+        articles.map((article) => (
+          <Article1
+            key={article.id}       // Unique key for React
+            {...article}           // Spread article properties
+            onDelete={handleDelete} // Pass delete function
+            img={image1}           // Extra image prop
+            img1={image2}          // Extra image prop
+          />
+        ))
+      )}
     </>
-    
-  )
+  );
 }
 
-export default Articles
+export default Articles;

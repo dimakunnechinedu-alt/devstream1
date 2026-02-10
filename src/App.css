@@ -117,6 +117,9 @@
 #future{
     color: black;
 }
+#writter{
+    color: grey;
+}
 #art{
     color: grey;
 }
@@ -144,7 +147,7 @@
     font-family: poppins sans-serif;
 }
 #modern{
-    color: grey;
+    color: black;
 }
 #word{
     font-size: 80px;
@@ -416,7 +419,7 @@ button{
 }
 
 .div-art2{
-    width: 48%;
+    width: 68%;
     background-color: whitesmoke;
     margin: 1%;
     padding: 1%;
@@ -435,16 +438,18 @@ button{
     border-radius: 20px;
 }
 .div-art22{
-    width: 28%;
+    width: 48%;
     background-color: whitesmoke;
     margin: 1%;
     padding: 2%;
 }
 .div-art23{
-    width: 48%;
+    width: 88%;
     background-color: whitesmoke;
     margin: 1%;
     padding: 1%;
+    font-weight: 900;
+    font-size: 20px;
 }
 .div-art24{
     width: 98%;
@@ -497,19 +502,6 @@ button{
 }
 #arrowimg{
     width: 70%;
-}
-.manuburger{
-    width: 8%;
-    margin: 1%;
-    padding: 1%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-#burgerimg{
-    width: 30px;
-    filter: invert();
-    cursor: pointer;
+
     
 }

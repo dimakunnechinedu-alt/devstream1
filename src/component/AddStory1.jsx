@@ -1,122 +1,176 @@
-import React, {useState} from 'react'
-import { useNavigate } from 'react-router-dom'
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 function AddStory1() {
-     const navigate = useNavigate()
 
-     const [formData,setFormData] = useState({
-          title:"",
-          narrative:"",
-          authorname:"",
-          authorabrev:""
-     })
+  // Hook for redirecting user after publishing
+  const navigate = useNavigate();
 
-     //state to show success message
-     const[successMessage,setSuccessMessage] = useState("")
+  // State to store form inputs
+  const [formData, setFormData] = useState({
+    title: "",
+    narrative: "",
+    authorname: "",
+    authorabrev: ""
+  });
 
-     // handle form submit
-     function handleSubmit(e){
-          e.preventDefault()
+  // State to show success message
+  const [successMessage, setSuccessMessage] = useState("");
 
-          const newPost = {
-               id: Date.now(),
-               date:new Date().toDateString(),
-               title:formData.title,
-               write: formData.narrative,
-               authorName:formData.authorname,
-               authorAbrev:formData.authorabrev
-          }
+  // Function to handle form submission
+  function handleSubmit(e) {
+    e.preventDefault(); // Prevent page reload
 
-          // get the " articles" data from localStorage (it returns a string or null)
-          const existingPosts = JSON.parse(localStorage.getItem("articles")) || []
-          //convert the string to a javascript array using JSON.parse()
-          //if nothing exists on localstorage yet (null),use an empty array instead
+    // Simple validation (prevent empty fields)
+    if (!formData.title || !formData.narrative || !formData.authorname) {
+      alert("Please fill in all required fields.");
+      return;
+    }
 
-          //create a new array where the new post is placed at the beginning
-          const updatedPosts = [newPost,...existingPosts] 
-          //spread operator(...) copies all existing posts after the new post
+    // Create a new post object
+    const newPost = {
+      id: Date.now(), // Unique ID using timestamp
+      date: new Date().toDateString(), // Current date
+      title: formData.title,
+      write: formData.narrative,
+      authorName: formData.authorname,
+      authorAbrev: formData.authorabrev
+    };
 
-          // save the updated array back into localstorage
-          localStorage.setItem("articles",JSON.stringify(updatedPosts))
-          //convert the array back to a string usning JSON.stringify()
-          // localStorage only stores data as strings
+    // Get existing posts from localStorage
+    // If nothing exists, use empty array
+    const existingPosts = JSON.parse(localStorage.getItem("articles")) || [];
 
-          // show success message
-          setSuccessMessage(" Story Published Successful")
+    // Add new post to the beginning of the array
+    const updatedPosts = [newPost, ...existingPosts];
 
-          // wait 1.5 seconds before redirect
-          setTimeout(() =>{
-               navigate('/articles')
-          },1500)
-     }
+    // Save updated array back to localStorage
+    localStorage.setItem("articles", JSON.stringify(updatedPosts));
+
+    // Show success message
+    setSuccessMessage("Story published successfully!");
+
+    // Clear form fields after submission
+    setFormData({
+      title: "",
+      narrative: "",
+      authorname: "",
+      authorabrev: ""
+    });
+
+    // Redirect after 1.5 seconds
+    setTimeout(() => {
+      navigate("/articles");
+    }, 1500);
+  }
+
   return (
-       <section className='sec-story'>
-        <form onSubmit={handleSubmit} className='art-story'>
-           <div className='div-story'>
-            <div className='div-story1'>
-                <div className='div-story2' id='div-story2'><h1 id='publishh'>Publish a Story</h1></div>
-                 <div className='div-story2'><p id='mind'>What's on your mind today?</p></div>
+    <section className="sec-story">
+      {/* Form starts here */}
+      <form onSubmit={handleSubmit} className="art-story">
+
+        <div className="div-story">
+
+          <div className="div-story1">
+            <div className="div-story2">
+              <h1 id="publishh">Publish a Story</h1>
             </div>
-            <div className='div-story3'><h4>HEADLINES</h4></div>
-            <input
-             type="text"
-             id='tittle'
-             placeholder='E.g Software Development' 
-             value={formData.title}
-             onChange={(e) =>
-             setFormData({...formData,title:e.target.value})
-             }
-             />
-            <div className='div-story4'><h4>THE NARRATIVE</h4></div>
-            <textarea name=""
-             id="narrative" 
-             placeholder='Once upon a Time'
-             cols="30"
-             rows="10"
-             value={formData.narrative}
-             onChange={(e) =>
-             setFormData({...formData,narrative:e.target.value})
-             }
+            <div className="div-story2">
+              <p id="mind">What's on your mind today?</p>
+            </div>
+          </div>
 
-             ></textarea>
-             <div className='div-story3'><h4>AUTHOR NAME</h4></div>
-            <input
-             type="Name" 
-             id='authorname'
-             placeholder='E.g Peter Jones' 
-             value={formData.authorname}
-             onChange={(e) =>
-             setFormData({...formData,authorname:e.target.value})
-             }
-             />
-            <div className='div-story3'><h4 id='authorabrev'>AUTHOR ABBREVIATION</h4></div>
-            <input
-             type="text"
-             id='authorabrev'
-              placeholder='Name Abbreviation e.g P' 
-              value={formData.authorabrev}
-             onChange={(e) =>
-             setFormData({...formData,authorabrev:e.target.value})
-             }
-              />
-            <div className='div-storybox'>
-                <button type='submit' className ='div-storybox1'><a id='publish' href="">Publish Now</a></button>
-                <button type='submit' className='div-storybox1' id='div-storybox1'><a id='save' href="">Save Draft</a></button> 
-                
-           </div> 
-            
-             </div>
-             
-             
-           
-            
-            
-        </form>
-        
+          {/* HEADLINE INPUT */}
+          <div className="div-story3">
+            <h4>HEADLINES</h4>
+          </div>
 
-        
-       </section>
-  )
+          <input
+            type="text"
+            id="title"
+            placeholder="E.g Software Development"
+            value={formData.title}
+            onChange={(e) =>
+              setFormData({ ...formData, title: e.target.value })
+            }
+          />
+
+          {/* NARRATIVE INPUT */}
+          <div className="div-story4">
+            <h4>THE NARRATIVE</h4>
+          </div>
+
+          <textarea
+            id="narrative"
+            placeholder="Once upon a time..."
+            cols="30"
+            rows="10"
+            value={formData.narrative}
+            onChange={(e) =>
+              setFormData({ ...formData, narrative: e.target.value })
+            }
+          ></textarea>
+
+          {/* AUTHOR NAME INPUT */}
+          <div className="div-story3">
+            <h4>AUTHOR NAME</h4>
+          </div>
+
+          <input
+            type="text"
+            id="authorname"
+            placeholder="E.g Peter Jones"
+            value={formData.authorname}
+            onChange={(e) =>
+              setFormData({ ...formData, authorname: e.target.value })
+            }
+          />
+
+          {/* AUTHOR ABBREVIATION INPUT */}
+          <div className="div-story3">
+            <h4 id="abbreviation">AUTHOR ABBREVIATION</h4>
+          </div>
+
+          <input
+            type="text"
+            id="authorabrev"
+            placeholder="Name Abbreviation e.g P"
+            value={formData.authorabrev}
+            onChange={(e) =>
+              setFormData({ ...formData, authorabrev: e.target.value })
+            }
+          />
+
+          {/* SUCCESS MESSAGE DISPLAY */}
+          {successMessage && (
+            <p style={{ color: "green", marginTop: "10px" }}>
+              {successMessage}
+            </p>
+          )}
+
+          {/* BUTTONS */}
+          <div className="div-storybox">
+
+            {/* Publish Button */}
+            <button type="submit" className="div-storybox1">
+              Publish Now
+            </button>
+
+            {/* Save Draft Button (not submitting form) */}
+            <button
+              type="button"
+              className="div-storybox1"
+              onClick={() => alert("Draft feature coming soon!")}
+            >
+              Save Draft
+            </button>
+
+          </div>
+
+        </div>
+      </form>
+    </section>
+  );
 }
 
-export default AddStory1
+export default AddStory1;

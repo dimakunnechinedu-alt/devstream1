@@ -14,10 +14,11 @@
     font-size: 50px;font-weight: bold;
 }
 #story{
+    
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: lighter;
+    font-weight: 700;
     color: grey;
 }
 .sec-wrapper{
@@ -48,19 +49,9 @@
     margin: 1%;
     padding: 1%;
     border-radius: 20px;
+
 }
-.div-box2{
-    width: 18%;
-    background-color: rgb(61, 48, 48);
-    margin: 1%;
-    padding: 1%;
-     display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    color: white;
-}
-#div-box2{
+#div-box14{
     background-color: white;
     color: grey;
 }
@@ -83,10 +74,10 @@
     justify-content: space-between;
 }
 .div-box34{
-    width: 28%;
+    width: 38%;
     background-color: white;
     margin: 1%;
-    padding: 2%;
+    padding: 3%;
     display: flex;
 }
 .div-box35{
@@ -99,22 +90,24 @@
     align-items: flex-end;
    
 }
+
+
 .div-box344{
     width: 18%;
     background-color: plum;
     margin: 1%;
-    padding: 1%;
+    padding: 1px 2px;
     border-radius: 5px;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
 .div-box334{
-     width: 98%;
+    width: 98%;
     background-color: white;
     margin: 1%;
     padding: 1%;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -138,8 +131,38 @@
 .image1:hover{
     color: red;
 } */
-#january{
+#java{
+    width: 88%;
+    background-color: aquamarine;
+
+}
+#javas{
+    width: 88%;
     display: flex;
+}
+.javas1{
+    width: 38%;
+    background-color: black;
+    margin: 1%;
+    padding: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+#feat{
+    font-size: 15px;
+    color: white;
+}
+#date{
+     font-size: 15px;
+    color: gray;
+}
+#javafeat{
+    background-color: white;
+    color: white;
+    padding: 2%;
+    margin: 1%;
 }
 #div-box355{
     width: 60%;
@@ -260,4 +283,63 @@ input{
 }
 #save{
     color: grey;
+}
+.burger{
+    width: 5%;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    filter: invert();
+}
+#imageexist{
+    width: 70%;
+    filter: invert();
+}
+.menuBurger {
+    width: 30%;
+    height: 80vh;
+    background-color: plum;
+    position: absolute;
+    top: 90px;
+    right: 20px;
+   
+    flex-direction: column;
+    padding: 15px;
+    gap: 15px;
+    transition: transform 0.5s ease;
+    display: flex;
+    border-radius: 20px;
+    z-index: 1000;
+}
+.add-art{
+    font-size: 20px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    padding: 3%;
+    margin: 15px 1px 0px 30px;
+}
+.menu-art{
+    font-size: 20px;
+    width: 80%;
+    padding: 3%;
+    background-color: white;
+    color: grey;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px 1px 0px 30px;
+}
+.overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 900;
+}
+.exit-btn{
+    font-size: 24px;
+    cursor: pointer;
+    align-self: flex-end;
+    background-color: rgb(72, 53, 72);
 }

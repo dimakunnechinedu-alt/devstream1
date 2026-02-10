@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function HeroSection() {
   return (
@@ -14,12 +15,19 @@ function HeroSection() {
           </p><br />
 
           <div id='divsub1'>
-          <div id='divsub2'>
-            <h4 id='writter' >Start Reading </h4><br /><br />
+
+          
+           <div id='divsub2'>
+            
+            <h4 id='write' >Start Reading </h4><br /><br />
             <img id='image1' src="/right-arrow.png" alt="" />
+            
           </div>
+          
           <div id='divsub22'>
+            <Link to="/add-story">
             <h4 id='writter'>Become a writter</h4>
+            </Link>
           </div>
           </div>
         </div>
