@@ -194,6 +194,9 @@
     #ul-listing{
         display: none;
     }
+    #modern{
+        font-size: 16px;
+    }
     #art1{
         flex-direction: column;
     }

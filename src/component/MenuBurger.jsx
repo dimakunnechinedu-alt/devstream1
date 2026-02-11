@@ -14,8 +14,8 @@ function MenuBurger({menuOpen,setMenuOpen}) {
       </button>
       
       <Link className='menu-art' to="/" onClick={()=>setMenuOpen(false)}>Home</Link>
-      <Link className='menu-art' to="/Article" onClick={()=>setMenuOpen(false)}>Article</Link>
-      <Link className='add-art' to="/AddStory" onClick={()=>setMenuOpen(false)}>AddStory</Link>
+      <Link className='menu-art' to="/article" onClick={()=>setMenuOpen(false)}>Article</Link>
+      <Link className='add-art' to="/add-story" onClick={()=>setMenuOpen(false)}>AddStory</Link>
        
     </div>
     
