@@ -82,7 +82,7 @@ function AddStory1() {
 
           {/* HEADLINE INPUT */}
           <div className="div-story3">
-            <h4>HEADLINES</h4>
+            <h4 id="headline">HEADLINES</h4>
           </div>
 
           <input
@@ -97,7 +97,7 @@ function AddStory1() {
 
           {/* NARRATIVE INPUT */}
           <div className="div-story4">
-            <h4>THE NARRATIVE</h4>
+            <h4 id="narrate">THE NARRATIVE</h4>
           </div>
 
           <textarea
@@ -113,7 +113,7 @@ function AddStory1() {
 
           {/* AUTHOR NAME INPUT */}
           <div className="div-story3">
-            <h4>AUTHOR NAME</h4>
+            <h4 id="authorname1">AUTHOR NAME</h4>
           </div>
 
           <input

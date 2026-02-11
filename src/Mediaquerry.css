@@ -260,6 +260,27 @@
     #built{
         font-size: 12px;
     }
+      #publishh{
+    font-size: 12px;
+   }
+   #mind{
+    font-size: 6px;
+    font-weight: 600;
+    color: black;
+    
+   }
+   #abbreviation{
+    font-size: 6px;
+   }
+   #authorname1{
+    font-size: 10px;
+   }
+   #narrate{
+    font-size: 8px;
+   }
+   #headline{
+    font-size: 8px;
+   }
 }  
 
 /* for iphone 14 promax*/
@@ -304,6 +325,27 @@
 
 /* for iphone XR*/
 @media  screen and (max-width: 414px){
+     #publishh{
+    font-size: 12px;
+   }
+   #mind{
+    font-size: 6px;
+    font-weight: 600;
+    color: black;
+    
+   }
+   #abbreviation{
+    font-size: 6px;
+   }
+   #authorname1{
+    font-size: 10px;
+   }
+   #narrate{
+    font-size: 8px;
+   }
+   #headline{
+    font-size: 8px;
+   }
     
 }
 /* for Samsug galaxy s20 ultra*/
@@ -333,6 +375,9 @@
 }
 /* for iphone X*/
 @media  screen and (max-width: 375px){
+     #publishh{
+    font-size: 20px;
+   }
 
 }
 /* for samsung galaxy s8+*/
@@ -358,6 +403,27 @@
     #div3-writup{
         font-size: 20px;
     }
+      #publishh{
+    font-size: 10px;
+   }
+   #mind{
+    font-size: 6px;
+    font-weight: 600;
+    color: black;
+    
+   }
+   #abbreviation{
+    font-size: 4px;
+   }
+   #authorname1{
+    font-size: 8px;
+   }
+   #narrate{
+    font-size: 8px;
+   }
+   #headline{
+    font-size: 8px;
+   }
     
 
 }
